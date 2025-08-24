@@ -1,0 +1,497 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style3.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<title>🎵🎼 😊enjoy our musicwebsite😊🎼🎵</title>
+<style>
+
+  
+
+@media screen and (max-width:600px) {
+      .container{
+        width:97vw;
+        height:97vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  }
+  .header{
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.4fr 0.6fr;
+  row-gap:5px;
+  height:25vh;
+}
+.main{
+  
+  width:97vw;
+  height:70vh;
+  justify-content: center;
+  place-items: center;
+  background: #000; 
+}
+
+.scene{
+   
+      perspective: 200px;
+      
+      
+    }
+.face{
+  width:150px;
+  height:150px;
+}
+.cube{
+  width:100%;
+  height:100%;
+}
+  .front  { transform: rotateY(0deg) translateZ(75px);  }
+    .back   { transform: rotateY(180deg) translateZ(75px); }
+    .right  { transform: rotateY(90deg) translateZ(75px);  }
+    .left   { transform: rotateY(-90deg) translateZ(75px);  }
+    .top    { transform: rotateX(90deg) translateZ(75px);  }
+    .bottom { transform: rotateX(-90deg) translateZ(75px);  }
+.sng{
+  width:40px;
+  height:40px;
+}
+.head1,.head2{
+  
+
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   column-gap: 5px;
+   row-gap: 5px;
+   place-items: center;
+
+}
+
+
+}  
+@media screen and (max-height:673px){
+    .container{
+  grid-template-columns: 0.8fr 1.2fr;
+  grid-auto-rows:minmax(100px, auto);
+  
+  }
+
+.header{
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: minmax(100px,auto) ;
+  height: 97vh;
+
+}
+.head1,.head2{
+  
+
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr 1fr;
+   /* column-gap: 5px;
+   row-gap: 5px; */
+
+}
+.main{
+  height: calc(97vh);
+
+  
+}
+
+.sng a{
+    /* background-image: url("home_29dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"); */
+
+    width:20px;
+    height:20px;  
+    
+
+}
+
+
+}   
+  
+@media screen and (min-width:601px) and (max-width:900px)   {
+  .container{
+  grid-template-columns: 0.6fr 1.4fr;
+  grid-auto-rows:minmax(100px, auto);
+  
+  }
+
+.main {
+  
+  gap: 10%;         
+  min-height: 100vh; 
+  
+}
+
+.header{
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: minmax(100px,auto);
+  height: 97vh;
+
+}
+.head1{
+  
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+  /* grid-template-columns: 1fr;
+  grid-auto-rows: minmax(10px, auto);
+   grid-auto-flow: row;
+  row-gap: 10px; */
+
+
+
+
+}
+.head2{
+   grid-template-columns: 1fr;
+  grid-auto-columns: minmax(10px, auto);
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-rows: minmax(5px, auto);
+  margin-bottom:10px;
+row-gap: 10px;  
+ 
+}
+.main {
+  display: flex;
+  max-width:100%;
+  min-width:10%;
+  flex-direction: column; 
+  /* gap: 300px;          */
+  overflow-y: auto;     
+ max-width:100%;
+ min-width:10%;
+ margin-bottom:20px;
+  
+
+}
+
+
+
+}
+
+@media screen and (min-width:1025px){
+
+.main50,.main60,.main70,.main80,.main90,.newgen{
+     
+      display:grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr 1fr ;
+      place-items: center;
+      column-gap: 150px;
+      /* padding-top:150px; */
+      padding: 100px;
+}
+.head1{
+  place-items: center;
+
+}
+.scene{
+  perspective: 1000px;
+}
+
+} 
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="head1">
+        
+          <div class="sng h"></div>
+      
+     
+          <div class="sng a"></div>
+      
+          <div class="sng b"></div>
+          <div class="sng c"></div>
+          <div class="sng d"></div>
+          <div class="sng e"></div>
+          <div class="sng f"></div>
+          <div class="sng g"></div>
+      </div>
+      <div class="head2">
+        <button class="sn0" onclick="filterImages('home')">home</button>
+        <button class="sn1" onclick="filterImages('main50')">50 song</button>
+        <button class="sn2" onclick="filterImages('main60')">60 song</button>
+        <button class="sn3" onclick="filterImages('main70')">70song</button>
+        <button class="sn4" onclick="filterImages('main80')">80 song</button>   
+        <button class="sn5" onclick="filterImages('main90')">90 song</button>
+        <button class="sn6" onclick="filterImages('newgen')">new gen</button>
+        <button class="sn7">profile</button>
+                            
+      </div>    
+
+      </div>
+    <div class="main">
+      
+      <div class="main50">
+       
+        <div class="scene">
+          <div class="cube">  
+            <div class="face front A0" onclick="Z1('s1')">h</div>
+            <div class="face back F0" onclick="Z1('s3')"></div>
+            <div class="face right C0" onclick="Z1('s2')">o</div>
+            <div class="face left D0" onclick="Z1('s3')">Ly</div>
+            <div class="face top E0" onclick="Z1('s4')"></div>
+            <div class="face bottom B0" onclick="Z1('s5')"></div>
+          </div>
+
+        </div>
+        <div class="scen">60song</div>
+        <div class="scene">
+          <div class="cube"> 
+            <div class="face front A1" onclick="Z1('s11')"></div>
+            <div class="face back F1" onclick="Z1('s12')"></div>
+            <div class="face right C1" onclick="Z1('s12')"></div>
+            <div class="face left D1" onclick="Z1('s13')"></div>
+            <div class="face top E1" onclick="Z1('s14')"></div>
+            <div class="face bottom B1" onclick="Z1('s15')"></div>             
+
+          </div>
+
+        </div>
+       
+      </div>    
+      <div class="main60">
+        <div class="scene">
+          <div class="cube"> 
+            <div class="face front A2" onclick="Z1('s16')"></div>
+            <div class="face back F2" onclick="Z1('s17')"></div>
+            <div class="face right C2" onclick="Z1('s17')"></div>
+            <div class="face left D2" onclick="Z1('s18')">Lonely</div>
+            <div class="face top E2" onclick="Z1('s19')"></div>
+            <div class="face bottom B2" onclick="Z1('s20')"></div>             
+    
+          </div>
+
+        </div>
+        <div class="scen">70song</div>
+        <div class="scene">
+          <div class="cube">  
+            <div class="face front A3" onclick="Z1('s21')"></div>
+            <div class="face back F3" onclick="Z1('s21')"></div>
+            <div class="face right C3" onclick="Z1('s22')"></div>
+            <div class="face left D3" onclick="Z1('s23')"></div>
+            <div class="face top E3" onclick="Z1('s24')"></div>
+            <div class="face bottom B3" onclick="Z1('s25')"></div>            
+
+
+          </div>
+
+        </div>
+
+      </div> 
+      <div class="main70">
+      
+        <div class="scene">
+          <div class="cube"> 
+            <div class="face front A4" onclick="Z1('s26')"></div>
+            <div class="face back F4" onclick="Z1('s27')"></div>
+            <div class="face right C4" onclick="Z1('s28')"></div>
+            <div class="face left D4" onclick="Z1('s29')"></div>
+            <div class="face top E4" onclick="Z1('s27')"></div>
+            <div class="face bottom B4" onclick="Z1('s30')"></div>             
+
+          </div>
+
+        </div>
+        <div class="scen">80song</div>
+        <div class="scene">
+          <div class="cube"> 
+            <div class="face front A5" onclick="Z1('s31')"></div>
+            <div class="face back F5" onclick="Z1('s32')"></div>
+            <div class="face right C5" onclick="Z1('s32')"></div>
+            <div class="face left D5" onclick="Z1('s33')"></div>
+            <div class="face top E5" onclick="Z1('s34')"></div>
+            <div class="face bottom B5" onclick="Z1('s35')"></div>             
+
+          </div>
+
+        </div>
+       
+      </div>    
+      <div class="main80">
+        <div class="scene">
+          <div class="cube"> 
+            <div class="face front A6" onclick="Z1('s369')"></div>
+            <div class="face back F6"></div>
+            <div class="face right C6" onclick="Z1('s37')"></div>
+            <div class="face left E6" onclick="Z1('s38')"></div>
+            <div class="face top D6" onclick="Z1('s39')"></div>
+            <div class="face bottom B6" onclick="Z1('s40')"></div>             
+
+          </div>
+
+        </div>
+        <div class="scen">90'song</div>
+        <div class="scene">
+          <div class="cube"> 
+            <div class="face front A7" onclick="Z1('s41')"></div>
+            <div class="face back F7" onclick="Z1('s42')"></div>
+            <div class="face right C7" onclick="Z1('s42')"></div>
+            <div class="face left D7" onclick="Z1('s43')"></div>
+            <div class="face top E7" onclick="Z1('s44')"></div>
+            <div class="face bottom B7" onclick="Z1('s45')"></div>             
+
+          </div>
+
+        </div>
+      
+      </div>
+      <div class="main90">
+        <div class="scene">
+          <div class="cube"> 
+            <div class="face front A8" onclick="Z1('s46')"></div>
+            <div class="face back F8" onclick="Z1('s47')"></div>
+            <div class="face right C8" onclick="Z1('s47')"></div>
+            <div class="face left D8" onclick="Z1('s48')"></div>
+            <div class="face top E8" onclick="Z1('s49')"></div>
+            <div class="face bottom B8" onclick="Z1('s50')"></div>             
+
+          </div>
+
+        </div>
+        <div class="scen">1990-2020song</div>
+        <div class="scene">
+          <div class="cube">
+            <div class="face front A9" onclick="Z1('s6')"></div>
+            <div class="face top B9" onclick="Z1('s7')"></div>
+            <div class="face right C9" onclick="Z1('s7')"></div>
+            <div class="face left D9" onclick="Z1('s8')"></div>
+            <div class="face back E9" onclick="Z1('s9')"></div>
+            <div class="face bottom B9" onclick="Z1('s10')"></div>             
+
+
+          </div>
+
+        </div>
+      
+      </div>         
+      <div class="newgen">
+        <div class="scene">
+          <div class="cube">  
+            <div class="face front A10" onclick="Z1('b12')"></div>
+            <div class="face back F10" ></div>
+            <div class="face right C10" onclick="Z1('c12')"></div>
+            <div class="face left D10" onclick="Z1('c13')" ></div>
+            <div class="face top E10" onclick="Z1('e13')"></div>
+            <div class="face bottom B10" onclick="Z1('b13')"></div>
+          </div>
+
+        </div>
+        <div class="scen">newgen-rap</div>
+        <div class="scene">
+          <div class="cube">  
+            <div class="face front A11" onclick="Z1('a13')"></div>
+            <div class="face back F11 " ></div>
+            <div class="face right C11" onclick="Z1('a12')"></div>
+            <div class="face left D11" onclick="Z1('d13')"></div>
+            <div class="face top E11" onclick="Z1('e12')"></div>
+            <div class="face bottom B11" onclick="Z1('d12')"></div>
+          </div>
+          <div class="cube"></div>
+
+        </div>
+     
+               
+
+      
+      </div> 
+    
+     
+               
+
+      
+                       
+      
+
+
+    </div>
+<audio id="s1" src="music/1.mp3"></audio>
+<audio id="s2" src="music/2.mp3"></audio>
+<audio id="s3" src="music/3.mp3"></audio>
+<audio id="s4" src="music/4.mp3"></audio>
+<audio id="s5" src="music/5.mp3"></audio>
+<audio id="s6" src="music/6.mp3"></audio>
+<audio id="s7" src="music/7.mp3"></audio>
+<audio id="s8" src="music/8.mp3"></audio>
+<audio id="s9" src="music/9.mp3"></audio>
+<audio id="s10" src="music/10.mp3"></audio>
+<audio id="s11" src="music/11.mp3"></audio>
+<audio id="s12" src="music/12.mp3"></audio>
+<audio id="s13" src="music/13.mp3"></audio>
+<audio id="s14" src="music/14.mp3"></audio>
+<audio id="s15" src="music/15.mp3"></audio>
+<audio id="s16" src="music/16.mp3"></audio>
+<audio id="s17" src="music/17.mp3"></audio>
+<audio id="s18" src="music/18.mp3"></audio>
+<audio id="s19" src="music/19.mp3"></audio>
+<audio id="s20" src="music/20.mp3"></audio>
+<audio id="s21" src="music/21.mp3"></audio>
+<audio id="s22" src="music/22.mp3"></audio>
+<audio id="s23" src="music/23.mp3"></audio>
+<audio id="s24" src="music/24.mp3"></audio>
+<audio id="s25" src="music/25.mp3"></audio>
+<audio id="s26" src="music/26.mp3"></audio>
+<audio id="s27" src="music/27.mp3"></audio>
+<audio id="s28" src="music/28.mp3"></audio>
+<audio id="s29" src="music/29.mp3"></audio>
+<audio id="s30" src="music/30.mp3"></audio>
+<audio id="s31" src="music/31.mp3"></audio>
+<audio id="s32" src="music/32.mp3"></audio>
+<audio id="s33" src="music/33.mp3"></audio>
+<audio id="s34" src="music/34.mp3"></audio>
+<audio id="s35" src="music/35.mp3"></audio>
+<audio id="s36" src="music/36.mp3"></audio>
+<audio id="s37" src="music/37.mp3"></audio>
+<audio id="s38" src="music/38.mp3"></audio>
+<audio id="s39" src="music/39.mp3"></audio>
+<audio id="s40" src="music/40.mp3"></audio>
+<audio id="s41" src="music/41.mp3"></audio>
+<audio id="s42" src="music/42.mp3"></audio>
+<audio id="s43" src="music/43.mp3"></audio>
+<audio id="s44" src="music/44.mp3"></audio>
+<audio id="s45" src="music/45.mp3"></audio>
+<audio id="s46" src="music/46.mp3"></audio>
+<audio id="s47" src="music/47.mp3"></audio>
+<audio id="s48" src="music/48.mp3"></audio>
+<audio id="s49" src="music/49.mp3"></audio>
+<audio id="s50" src="music/50.mp3"></audio>
+
+
+<audio src="music/krshna.mp3" id="a12"></audio>
+
+<audio src="music/talwinder" id="c12"></audio>
+<audio src="music/subh.mp3" id="d12"></audio>
+
+<audio src="music/raftar.mp3" id="a13"></audio>
+<audio src="music/siddhu.mp3" id="b12"></audio>
+<audio src="music/yoyo.mp3" id="b13"></audio>
+<audio src="music/brodha.mp3" id="c13"></audio>
+<audio src="music/sos.mp3" id="e12"></audio>
+<audio src="music/sedhe.mp3" id="e13"></audio>
+<audio src="music/emi.mp3" id="d13"></audio>
+<!-- <audio src="music/a14.mp3" id="a14"></audio> -->
+
+
+  
+
+
+
+
+
+ 
+
+  <script src="javasc/script3.js"> </script>
+  
+
+
+</body>
+</html>
