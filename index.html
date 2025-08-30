@@ -12,6 +12,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 <style>
+ .pro{
+     background-color:#EFBF04;
+     color:black;
+ }
 @media screen and (max-width: 600px){
     body{
         background: #343232;
@@ -156,7 +160,8 @@
             <input  class="input" type="text" placeholder="enter username/email" oninput="playmusic()" >
             <input class="input" type="text" placeholder="enter password"  oninput="playmusic(event)"> 
             <button>forget password</button>
-            <p>new user ? <button onclick="goNext(event); pausemusic(event);">sign in</button></p>    
+            <p>new user ? <br>
+                <button id="free" onclick="goNext(event); pausemusic(event);">sign in (free)</button><button  id="pro" onclick="goNext(event); pausemusic(event);">sign in (premium)</button></p>    
         </div>
         <div class="space2">   
         </div>
